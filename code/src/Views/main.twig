@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>{{ title }}</title>
+</head>
+<body>
+  <header>
+      <h1>Название сайта</h1>
+      <nav>
+          <a href="/">Главная</a>
+          <a href="/user">Пользователи</a>
+          <a href="/about">О нас</a>
+      </nav>
+  </header>
+  
+  <div class="content-area">
+      <aside class="sidebar">
+          <h2>Боковая колонка</h2>
+          <ul>
+              <li><a href="#">Элемент 1</a></li>
+              <li><a href="#">Элемент 2</a></li>
+              <li><a href="#">Элемент 3</a></li>
+          </ul>
+      </aside>
+
+      <main>
+          {% include content_template_name %}
+          <p>Текущее время: {{ "now"|date("H:i:s") }}</p>
+      </main>
+  </div>
+
+  <footer>
+      <p>&copy; {{ current_year }} Название сайта. Все права защищены.</p>
+  </footer>
+</body>
+</html>

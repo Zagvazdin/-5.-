@@ -1,0 +1,47 @@
+/* Основные стили */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Заголовки */
+h1 {
+    color: #4CAF50;
+}
+
+/* Стили для параграфов */
+p {
+    line-height: 1.6;
+}
+
+/* Стили для списка пользователей */
+.user-list {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Стили для кнопок */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Стили для сообщений об ошибках */
+.error {
+    color: red;
+    font-weight: bold;
+}
